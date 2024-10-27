@@ -38,19 +38,11 @@ export default function Home() {
           <h2>With Auto Generated Admin Panel & API routes</h2>
           <ol>
             <li>
-              Start by Define models in <code>prisma/schema.prisma</code> file.
+              Start by defining <code>.env</code> file.
             </li>
             <li>
-              Run <code>npm run migrate</code> to apply the migrations to the
+              Run <code>npm run migrate / yarn migrate</code> to apply the migrations to the
               database.
-            </li>
-            <li>
-              After the migration is successful, run{' '}
-              <code>npm run generate-crud</code>
-              to automatically generate API routes under <code>
-                pages/api
-              </code>{' '}
-              and admin panel pages under <code>pages/admin</code>.
             </li>
             <li>
               Once done, navigate to <a href="/admin">Admin Panel</a> to manage
