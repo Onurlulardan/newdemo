@@ -1,0 +1,41 @@
+.adminWrapper :global(*) {
+  scrollbar-color: unset !important;
+}
+
+.adminWrapper :global(::-webkit-scrollbar) {
+  width: 5px;
+  height: 5px;
+}
+
+.adminWrapper :global(::-webkit-scrollbar-track) {
+  background: #555;
+}
+
+.adminWrapper :global(::-webkit-scrollbar-thumb) {
+  background: #363636;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.adminWrapper :global(::-webkit-scrollbar-thumb:hover) {
+  background: #4e4e4e;
+}
+
+/* Quill editor stilleri */
+.adminWrapper .ql-editor {
+  min-height: 400px;
+}
+
+.adminWrapper .ql-toolbar {
+  border-radius: 6px 6px 0px 0px;
+}
+
+.adminWrapper .ql-container {
+  border-radius: 0px 0px 6px 6px;
+}
+
+/* Quill tooltip global stili */
+.adminWrapper :global(.ql-tooltip.ql-editing) {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
